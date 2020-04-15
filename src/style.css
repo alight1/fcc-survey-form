@@ -8,17 +8,55 @@ html {
   box-sizing: inherit;
 }
 
-.survey-form {
+:root {
+  /* Color */
+  --color-primary: #f2f7f5;
+  --color-paragraph: #475d5b;
+  --color-secondary1: rgba(0, 71, 62, 1);
+  --color-secondary1-translucent: rgba(0, 71, 62, 0.97);
+  --color-secondary1-headline: #fffffe;
+  --color-secondary1-sub-headline: #f2f7f5;
+  --color-secondary1-stroke: #00332c;
+  --color-highlight: #faae2b;
+
+  /* Size */
+  --content-width: 60vw;
+  --content-width-max: 850px;
+}
+
+body {
+  color: var(--color-paragraph);
+  text-align: center;
+  font-family: Candara, sans-serif;
+  background: no-repeat center/60% url("./assets/venn-diagram.svg")
+    var(--color-primary);
+}
+
+.header,
+.main {
+  width: var(--content-width);
+  max-width: var(--content-width-max);
+  padding: 20px;
+  margin: auto;
+}
+
+.main {
+  border-radius: 3px;
+  background: var(--color-secondary1-translucent);
+}
+
+.form-control {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-align: left;
 }
 
-.survey-form div {
+.form-control div {
   display: flex;
   flex-direction: column;
 }
-.survey-form div:nth-child(n + 2) {
+.form-control div:nth-child(n + 2) {
   margin-top: 25px;
 }
 
@@ -27,11 +65,45 @@ html {
   flex-direction: column;
 }
 
-.survey-form label,
+.form-control label,
 fieldset legend {
-  font-weight: bolder;
+  color: var(--color-secondary1-headline);
+  font-weight: bold;
 }
 
-.survey-form label {
+.form-control label {
   margin-bottom: 5px;
+}
+
+fieldset {
+  border: 1px solid var(--color-secondary1-stroke);
+  border-radius: 5px;
+}
+
+.form-control fieldset label {
+  color: var(--color-secondary1-sub-headline);
+}
+
+input,
+textarea,
+select {
+  padding: 5px;
+  border-radius: 5px;
+  border-width: 0;
+  background-color: var(--color-primary);
+  color: var(--color-paragraph);
+}
+
+option {
+  background-color: var(--color-primary);
+}
+
+.form-submit-button {
+  background-color: var(--color-highlight);
+  border: none;
+  border-radius: 2px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: var(--color-secondary1);
 }

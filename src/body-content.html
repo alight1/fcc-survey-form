@@ -1,10 +1,12 @@
-<main>
+<header class="header">
   <h1 id="title">How effective are you?</h1>
   <p id="description">
-    This survey encourages you to consider your effectiveness according to the 7
-    Habits of Highly Effective People by Stephen Covey.
+    This survey encourages you to consider your effectiveness habits with the 7
+    Habits of Highly Effective People by Stephen Covey in mind.
   </p>
-  <form id="survey-form" class="survey-form">
+</header>
+<main class="main">
+  <form id="survey-form" class="form-control">
     <div>
       <label for="name" id="name-label">Name</label>
       <input id="name" type="text" required placeholder="Name" />
@@ -14,22 +16,18 @@
       <input id="email" type="email" required placeholder="Email" />
     </div>
     <div>
-      <label for="number" id="number-label"
-        >Regularly practiced effectiveness habits</label
-      >
+      <label for="number" id="number-label">Regularly practiced habits</label>
       <input
         id="number"
         type="number"
         min="0"
-        max="100"
+        max="7"
         required
-        placeholder="Effectiveness habit count"
+        placeholder="Habit count"
       />
     </div>
     <div>
-      <label for="dropdown"
-        >Most impactful effectiveness habit in your life (so far)</label
-      >
+      <label for="dropdown">Most impactful habit in your life (so far)</label>
       <select id="dropdown" name="most-impactful-effectiveness-habit">
         <option disabled selected value>Select a habit</option>
         <option value="be-proactive">Be proactive</option>
@@ -121,7 +119,11 @@
     </div>
     <div>
       <label for="comments">How do you practice your habits?</label>
-      <textarea id="comments" name="comments"></textarea>
+      <textarea
+        id="comments"
+        name="comments"
+        placeholder="Please share practices and tips!"
+      ></textarea>
     </div>
     <div>
       <button type="submit" id="submit" class="form-submit-button">
