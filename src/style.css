@@ -11,7 +11,7 @@ html {
 :root {
   /* Font */
   --font-family: Candara, sans-serif;
-  /* Color */
+  /* Color - Source: https://www.happyhues.co/palettes/5 */
   --color-primary: #f2f7f5;
   --color-paragraph: #475d5b;
   --color-secondary1: rgba(0, 71, 62, 1);
