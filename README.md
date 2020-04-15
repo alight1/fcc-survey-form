@@ -1,8 +1,10 @@
 # Survey Form - freeCodeCamp Project
 
+A simple responsive survey form that gives a little attention to Stephen Covey's 7 Habits of Highly Effective People.
+
 **[Online demo](https://lightmotive.pro/fcc-survey-form/)**
 
-[Project instructions: Build a Survey Form](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
+[Project instructions](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
 
 ## Demonstrated concepts
 
