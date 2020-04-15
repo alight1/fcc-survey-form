@@ -28,8 +28,6 @@ body {
   color: var(--color-paragraph);
   text-align: center;
   font-family: Candara, sans-serif;
-  background: no-repeat center/60% url("./assets/venn-diagram.svg")
-    var(--color-primary);
 }
 
 .header,
@@ -41,8 +39,7 @@ body {
 }
 
 .main {
-  border-radius: 3px;
-  background: var(--color-secondary1-translucent);
+  background: no-repeat center/95% url("./assets/venn-diagram.svg");
 }
 
 .form-control {
@@ -50,6 +47,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
   text-align: left;
+  border-radius: 5px;
+  background: var(--color-secondary1-translucent);
+  padding: 20px;
 }
 
 .form-control div {
