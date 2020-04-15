@@ -7,3 +7,31 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+.survey-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.survey-form div {
+  display: flex;
+  flex-direction: column;
+}
+.survey-form div:nth-child(n + 2) {
+  margin-top: 25px;
+}
+
+.fieldset-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.survey-form label,
+fieldset legend {
+  font-weight: bolder;
+}
+
+.survey-form label {
+  margin-bottom: 5px;
+}
