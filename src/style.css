@@ -9,6 +9,8 @@ html {
 }
 
 :root {
+  /* Font */
+  --font-family: Candara, sans-serif;
   /* Color */
   --color-primary: #f2f7f5;
   --color-paragraph: #475d5b;
@@ -20,26 +22,33 @@ html {
   --color-highlight: #faae2b;
 
   /* Size */
-  --content-width: 60vw;
-  --content-width-max: 850px;
+  --content-width: 97vw;
+  --content-width-max: 750px;
+  --font-size-main: 1.5em;
+  --content-box-padding: 1.25em;
+  --input-padding: 0.625em;
+  --font-size-input: 0.9em;
+  --font-size-submit: 1.3em;
 }
 
 body {
   color: var(--color-paragraph);
   text-align: center;
-  font-family: Candara, sans-serif;
+  font-family: var(--font-family);
+  font-size: var(--font-size-main);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header,
 .main {
   width: var(--content-width);
   max-width: var(--content-width-max);
-  padding: 20px;
-  margin: auto;
 }
 
 .main {
-  background: no-repeat center/95% url("./assets/venn-diagram.svg");
+  background: no-repeat center/90% url("./assets/venn-diagram.svg");
 }
 
 .form-control {
@@ -47,9 +56,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
   text-align: left;
-  border-radius: 5px;
+  border-radius: calc(var(--input-padding) / 2);
   background: var(--color-secondary1-translucent);
-  padding: 20px;
+  padding: var(--content-box-padding);
 }
 
 .form-control div {
@@ -57,7 +66,7 @@ body {
   flex-direction: column;
 }
 .form-control div:nth-child(n + 2) {
-  margin-top: 25px;
+  margin-top: var(--content-box-padding);
 }
 
 .fieldset-list {
@@ -72,26 +81,30 @@ fieldset legend {
 }
 
 .form-control label {
-  margin-bottom: 5px;
+  margin-bottom: calc(var(--input-padding) / 2);
 }
 
 fieldset {
   border: 1px solid var(--color-secondary1-stroke);
-  border-radius: 5px;
+  border-radius: calc(var(--input-padding) / 2);
 }
 
 .form-control fieldset label {
   color: var(--color-secondary1-sub-headline);
+  font-weight: normal;
 }
 
 input,
 textarea,
-select {
-  padding: 5px;
-  border-radius: 5px;
-  border-width: 0;
+select,
+button {
+  padding: var(--input-padding);
+  border-radius: calc(var(--input-padding) / 2);
+  border: none;
   background-color: var(--color-primary);
   color: var(--color-paragraph);
+  font-size: var(--font-size-input);
+  font-family: var(--font-family);
 }
 
 option {
@@ -100,10 +113,7 @@ option {
 
 .form-submit-button {
   background-color: var(--color-highlight);
-  border: none;
-  border-radius: 2px;
-  padding: 10px;
-  font-size: 20px;
   font-weight: bolder;
   color: var(--color-secondary1);
+  font-size: var(--font-size-submit);
 }
