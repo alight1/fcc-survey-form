@@ -8,6 +8,8 @@ A simple responsive survey form that gives a little attention to Stephen Covey's
 
 ## Demonstrated concepts
 
+**Main languages:** HTML, CSS
+
 - Accessible, styled, and validated forms
 - CSS variables, functions, and relative sizing
 - display: flex
